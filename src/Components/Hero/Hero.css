@@ -1,0 +1,186 @@
+.hero {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero__left {
+  padding: 2rem;
+  padding-top: 1.5rem;
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.the__best-ad{
+    margin-top: 4rem;
+    background-color: #363d42;
+    border-radius: 4rem;
+    width: fit-content;
+    padding: 20px 13px;
+    color: #fff;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+}
+
+.the__best-ad span{
+    z-index: 2;
+}
+
+.the__best-ad div{
+    width: 5.4rem;
+    height: 80%;
+    background-color: var(--orange);
+    position: absolute;
+    left: 8px;
+    border-radius: 3rem;
+    z-index: 1;
+}
+
+.hero__text {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #fff;
+    text-overflow: inherit;
+    text-transform: uppercase;
+}
+
+.hero__text>:nth-child(2){
+    text-transform: none;
+    font-size: 1rem;
+    font-weight: 200;
+    margin-top: 2rem;
+    letter-spacing: 1px;
+}
+
+.figures{
+  display: flex;
+  gap: 2rem;
+}
+
+.figures div{
+  display: flex;
+  flex-direction: column;
+}
+
+.figures div>:nth-child(1){
+  font-size: 2rem;
+  color: #fff;
+}
+
+.figures div>:nth-child(2){
+  color: var(--gray);
+  text-transform: uppercase;
+}
+
+.hero__buttons{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font:normal;
+}
+
+.hero__buttons>:nth-child(1){
+  background-color: var(--orange);
+  color: #fff;
+  letter-spacing: 2px;
+  width: 8rem;
+}
+
+.hero__buttons>:nth-child(2){
+  background-color: transparent;
+  letter-spacing: 2px;
+  color: white;
+  border: 2px solid var(--orange);
+  width: 8rem;
+}
+
+.hero__right {
+  flex: 1;
+  position: relative;
+  background-color: var(--orange);
+}
+
+.hero__right .btn{
+  position: absolute;
+  right: 0;
+  top: 2rem;
+  right: 3rem;
+  color: #000;
+}
+
+.heart__rate{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: fit-content;
+  background-color: var(--darkGrey);
+  padding: 1rem;
+  align-items: start;
+  border-radius: 5px;
+  position: absolute;
+  top: 7rem;
+  right: 4rem;
+}
+
+.heart__rate img{
+  width: 2rem;
+}
+
+.heart__rate>:nth-child(2){
+  color: var(--gray);
+}
+
+.heart__rate>:nth-child(3){
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.hero__img{
+  position: absolute;
+  top: 10rem;
+  right: 8rem;
+  width: 23rem;
+}
+
+.hero__back-img{
+  position: absolute;
+  top: 4rem;
+  right: 20rem;
+  z-index: -1;
+  width: 15rem;
+}
+
+.calories{
+  display: flex;
+  gap: 2rem;
+  background-color: var(--caloryCard);
+  border-radius: 5px;
+  padding: 1rem;
+  width: fit-content;
+  position: absolute;
+  top: 32rem;
+  right: 28rem;
+}
+
+.calories img{
+  width: 3rem;
+}
+
+.calories div{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.calories div>:nth-child(1){
+  color: var(--gray);
+}
+
+.calories div>:nth-child(2){
+  color: #fff;
+  font-size:1.5rem;
+}

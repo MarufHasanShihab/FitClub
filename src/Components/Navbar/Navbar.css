@@ -1,0 +1,24 @@
+nav{
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 10rem;
+    height: 3rem;
+}
+
+.nav__menu{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    color: #fff;
+}
+
+.nav__menu li{
+    cursor: pointer;
+    &:hover{
+        color: var(--orange);
+    }
+}
