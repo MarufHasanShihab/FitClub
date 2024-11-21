@@ -1,6 +1,9 @@
-export const programsData = [
+import "./Programs.css";
+import right__arrow from "../../assets/rightArrow.png"
+
+ const programsData = [
   {
-    image: (
+    "image": (
       <svg
         width="16"
         height="15"
@@ -49,7 +52,32 @@ export const programsData = [
     details:
       "This programs is designed for those who exercises only for their body fitness not body building.",
   },
-];
+]
 
 
+const Programs = () => {
+  return (
+    <div className="programs" id="programs">
+      <div className="programs__header">
+        <span className="stroke__text">Explore our</span>
+        <span>Programs</span>
+        <span className="stroke__text">To shape you</span>
+      </div>
+      {/* programs categories */}
+      <div className="programs__categories">
+        {
+          programsData?.map((program,i)=>(
+            <div className="categorie" key={i}>
+              {program.image}
+              <h4>{program.heading}</h4>
+              <p>{program.details}</p>
+              <div className="join__now"><span>Join Now</span><img src={right__arrow} alt="" /></div>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  );
+};
 
+export default Programs;
