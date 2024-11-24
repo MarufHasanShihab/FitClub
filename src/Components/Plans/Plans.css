@@ -18,6 +18,8 @@
     background-color: var(--caloryCard);
     color: #fff;
     padding: 1.5rem;
+    max-width: 18rem;
+    position: relative;
 }
 
 .plan>svg{
