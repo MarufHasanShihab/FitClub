@@ -5,7 +5,7 @@
   padding: 0 2rem;
 }
 
-.programs__header {
+.programs__header, .plans__header {
   display: flex;
   align-items: center;
   justify-content: center;
